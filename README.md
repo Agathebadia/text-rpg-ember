@@ -48,6 +48,13 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 Specify what it takes to deploy your app.
 
+### Experiments and notes
+
+- TODO: New story and endings using Twine for story and branching
+- TODO: Find visuals or audios, ways of improving the text rpg experience
+- TODO: Publish to netlify
+- Experiment-Manual work: Day 1 - Feb 8th, problems setting up Tailwind within Ember app, approx. 2h30 of set up + debugging + Ember component creation
+
 ## Further Reading / Useful Links
 
 * [ember.js](https://emberjs.com/)

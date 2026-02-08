@@ -1,11 +1,12 @@
 <article>
-<p id="text" class="text-3xl text-justify">This is the story being explained</p>
+<p id="text" class="text-2xl text-justify">{{this.currentTextNode.text}}</p>
 <p id="options-buttons" class="btn-grid">
   <div class="flex justify-center">
-    <button class="bg-yellow-100 m-2">Option 1</button>
-    <button class="bg-yellow-100 m-2">Option 2</button>
-    <button class="bg-yellow-100 m-2">Option 3</button>
-    <button class="bg-yellow-100 m-2">Option 4</button>
+    {{#each this.visibleOptions as |option|}}
+    <button type="button" class="btn bg-sky-300 px-4 py-2 rounded m-2" {{on "click" (fn this.selectOption option)}}>
+      {{option.text}}
+    </button>
+    {{/each}}
   </div>
 </p>
 </article>
